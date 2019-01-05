@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+
+  <!-- Font Awesome Glyphicons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <!-- Chosen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+
+<style>
+
+    select {
+        margin-bottom: 25px;
+    }
+
+</style>
+
+
+</head>
+
+<body>
+
+  <div class="container">
+    
+    <h2>Survey Questions</h2>
+    <hr>
+
+    <h4><strong>About You</strong></h4>
+    <h5>Name (Required)</h5>
+    <input type="text" id="name" class="form-control" required>
+
+    <h5>Link to Photo Image (Required)</h5>
+    <input type="text" id="photo" class="form-control" required>
+
+    <hr>
+
+    <h4><strong>Question 1</strong></h4>
+    <h5>Esport is a real sport</h5>
+    <select class="chosen-select" id="q1">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h4><strong>Question 2</strong></h4>
+    <h5>Physical fitness is an important part of your life</h5>
+    <select class="chosen-select" id="q2">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h4><strong>Question 3</strong></h4>
+    <h5>Giants are better than Jets</h5>
+    <select class="chosen-select" id="q3">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h4><strong>Question 4</strong></h4>
+    <h5>Patriots suck</h5>
+    <select class="chosen-select" id="q4">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h4><strong>Question 5</strong></h4>
+    <h5>You like to speak your mine</h5>
+    <select class="chosen-select" id="q5">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h4><strong>Question 6</strong></h4>
+    <h5>Outdoor activities are important in my life</h5>
+    <select class="chosen-select" id="q6">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h4><strong>Question 7</strong></h4>
+    <h5>You enojoy coffee more than tea</h5>
+    <select class="chosen-select" id="q7">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h4><strong>Question 8</strong></h4>
+    <h5>You can just sit and read a good novel for hours</h5>
+    <select class="chosen-select" id="q8">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h4><strong>Question 9</strong></h4>
+    <h5>You are a morning person</h5>
+    <select class="chosen-select" id="q9">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h4><strong>Question 10</strong></h4>
+    <h5>Video games does not promote violence</h5>
+    <select class="chosen-select" id="q10">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <br>
+    <br>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+     Submit</button>
+
+     <hr>
+    <footer class="footer">
+        <div class="container">
+            <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/jixuni/friend_finder" alt="Github Repo">Gitub Repo</a>
+        </div>
+    </footer>
+
+  </div>
+
+      
+
+  <!-- Modal -->
+      <div class="modal fade" id="results-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Best Match</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <h2 id="match-name"></h2>
+                <img id="match-img" src="http://mantherapy.org/bundles/gritman/images/Dr_Rich_armchair.png?v21" alt="image" style="width:200px;">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+
+<script type="text/javascript">
+    // Chosen CSS
+    var config = {
+      ".chosen-select": {},
+      ".chosen-select-deselect": {
+        allow_single_deselect: true
+      },
+      ".chosen-select-no-single": {
+        disable_search_threshold: 10
+      },
+      ".chosen-select-no-results": {
+        no_results_text: "Oops, nothing found!"
+      },
+      ".chosen-select-width": {
+        width: "95%"
+      }
+    };
+
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+
+    // Capture the form inputs
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+
+      // Form validation
+      function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function() {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+
+        $(".chosen-select").each(function() {
+
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        return isValid;
+      }
+
+      // If all required fields are filled
+      if (validateForm()) {
+        // Create an object for the user"s data
+        var userData = {
+          name: $("#name").val(),
+          photo: $("#photo").val(),
+          scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
+        };
+
+        // AJAX post the data to the friends API.
+        $.post("/api/friends", userData, function(data) {
+
+          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+          $("#match-name").text(data.name);
+          $("#match-img").attr("src", data.photo);
+            console.log("logging data");
+            console.log(data);
+          // Show the modal with the best match
+          $("#results-modal").modal('toggle');
+
+        });
+      } else {
+        alert("Please fill out all fields before submitting!");
+      }
+    });
+  </script>
+
+
+
+</body>
+</html>

@@ -18,6 +18,6 @@ app.get("/survey", (req, res) => {
 });
 
 
-app.listen(PORT), () => {
+app.listen(PORT, () => {
     console.log("App listening on port " + PORT);
-}
+})
